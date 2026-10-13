@@ -1,0 +1,266 @@
+{
+  "info": {
+    "_postman_id": "929cbbe6-482b-4094-bd77-50899a6b3b18",
+    "name": "Coleccion_Laboratorio1",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "28410835"
+  },
+  "item": [
+    {
+      "name": "Agregar categoria",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "    {\r\n        \"nombre\": \"Frituras\",\r\n        \"descripcion\": \"Frituras procesadas\"\r\n    }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/categoria/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "categoria",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listas categorias",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/categoria/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "categoria",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar categoria por Id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/categoria/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "categoria",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Actualizar categoria",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nombre\": \"Congelados\",\r\n    \"descripcion\": \"Alimentos congelados\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/categoria/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "categoria",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Borrar categoria",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/categoria/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "categoria",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Agregar producto",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nombre\": \"Queso cottage\",\r\n    \"descripcion\": \"Queso cottage organico\",\r\n    \"precio\": 500,\r\n    \"cantidadStock\": 10,\r\n    \"categoriaId\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/producto/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "producto",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar productos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/producto/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "producto",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar producto por Id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/producto/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "producto",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Actualizar producto",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nombre\": \"Leche agria\",\r\n    \"descripcion\": \"Leche agria natural\",\r\n    \"precio\": 750.0,\r\n    \"cantidadStock\": 5,\r\n    \"categoriaId\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/producto/6",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "producto",
+            "6"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Eliminar producto",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/producto/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "producto",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
